@@ -7,7 +7,7 @@ public class Main {
         // Из файла config.properties получаем PORT
         // "src/main/java/ru/netology/resources/config.properties"
         int PORT = new Config().getPORT();
-        Server server = new Server();
+        Server server = new Server(PORT);
         server.listen(PORT);
     }
 }
